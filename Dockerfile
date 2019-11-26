@@ -9,6 +9,7 @@ RUN apk -Uuv add groff less python py-pip
 RUN pip install awscli
 RUN apk add jq
 RUN apk add zip
+RUN apk add curl
 RUN apk add --no-cache git
 RUN apk add --no-cache openssh-client
 RUN git clone https://github.com/tfutils/tfenv.git ~/.tfenv
